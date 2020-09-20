@@ -9,10 +9,12 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name = "employees")
+@Data
 public class Employee {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	
 	private long id;
 	
 	@Column(name = "first_name")
